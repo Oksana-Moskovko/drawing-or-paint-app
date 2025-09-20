@@ -26,6 +26,10 @@
                         <img src="icons/triangle.svg" alt="">
                         <span>Triangle</span>
                     </li>
+                    <li class="option tool" id="line">
+                        <img src="" alt="">
+                        <span>Line</span>
+                    </li>
                     <li class="option">
                         <input type="checkbox" id="fill-color">
                         <label for="fill-color">Fill color</label>
@@ -44,11 +48,11 @@
                         <span>Eraser</span>
                     </li>
                     <li class="option">
-                        <input type="range" id="size-slider">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
                     </li>
                 </ul>
             </div>
-            <div class="row">
+            <div class="row colors">
                 <label class="title">Colors</label>
                 <ul class="options">
                     <li class="option"></li>
@@ -66,7 +70,7 @@
             </div>
         </section>
         <section class="drawing-board">
-            <canvas></canvas>
+            <canvas id="myCanvas"></canvas>
         </section>
         </div>
     </body>
